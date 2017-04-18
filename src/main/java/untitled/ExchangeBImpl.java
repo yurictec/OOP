@@ -21,7 +21,7 @@ public class ExchangeBImpl implements DataExchange {
 
     @Override
     public double getPriceStrike() {
-        entityExchange.setPrice(99.20003);
+        entityExchange.setPrice(99);
         return entityExchange.getPrice();
     }
 }
