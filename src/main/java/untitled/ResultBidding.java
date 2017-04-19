@@ -8,11 +8,12 @@ import java.util.List;
 
 public class ResultBidding {
 
-    public static List<AbstractInstrument> read(TypeExchange typeExchange){
+    public static List<AbstractInstrument> read(TypeExchange typeExchange) {
         List<AbstractInstrument> list = new ArrayList<>();
-        list.add(CommandFactory.getInstance().getCommand(typeExchange).exequteFuture());
-        list.add(CommandFactory.getInstance().getCommand(typeExchange).exequteOption());
-        list.add(CommandFactory.getInstance().getCommand(typeExchange).exequteStock());
+        CommandFactory factory = CommandFactory.getInstance();
+        list.add(factory.getCommand(typeExchange).exequteFuture());
+        list.add(factory.getCommand(typeExchange).exequteOption());
+        list.add(factory.getCommand(typeExchange).exequteStock());
         return list;
 
     }

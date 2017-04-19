@@ -8,7 +8,7 @@ public class OptionB extends AbstractInstrument {
     private int margin;
 
     {
-        setName("Apple Inc");
+        setName("Apple Inc".toUpperCase());
         setTicker("AAPL");
         setPriceStrike(101.5041);
         this.expirationDate = "11-30-2017";

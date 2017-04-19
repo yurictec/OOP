@@ -8,7 +8,7 @@ public class StockB extends AbstractInstrument{
     private double interestRate;
 
     {
-        setName("International Business Machines");
+        setName("International Business Machines".toUpperCase());
         setTicker("IBM");
         setPriceStrike(141.1101);
         this.expirationDate = "04-15-2017";
